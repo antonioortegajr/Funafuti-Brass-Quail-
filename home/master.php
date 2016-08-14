@@ -35,10 +35,13 @@ hr{
     width:90%
 }
 </style>
+<h1>
+<img src="http://stereo.nypl.org/assets/about-gif2-267c8f399f5d723477da905400eb634a.gif">
+WorkShop
+<img src="http://stereo.nypl.org/assets/about-gif2-267c8f399f5d723477da905400eb634a.gif">
+</h1>
 
-<h1>WorkShop</h1>
   <!-- Wide card with share menu button -->
-
 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
   <div class="mdl-card__title">
     <h3 class="mdl-card__title-text">Antonio</h3>
