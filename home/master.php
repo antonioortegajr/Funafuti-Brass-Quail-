@@ -35,35 +35,6 @@ hr{
     width:90%
 }
 </style>
-<h1>
-<img src="http://stereo.nypl.org/assets/about-gif2-267c8f399f5d723477da905400eb634a.gif">
-WorkShop
-<img src="http://stereo.nypl.org/assets/about-gif2-267c8f399f5d723477da905400eb634a.gif">
-</h1>
-
-  <!-- Wide card with share menu button -->
-<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title">
-    <h3 class="mdl-card__title-text">Antonio</h3>
-  </div>
-  <div class="mdl-card__supporting-text">
-    Hi, I thanks for attending my workshop. We are going to code up some details pages,
-  make some API calls, and more. All this in this nifty little console.
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Get Started
-    </a>
-  </div>
-  <div class="mdl-card__menu">
-    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" data-clipboard-demo="" data-clipboard-target="#one">
-      <i class="material-icons">share</i>
-    </button>
-  </div>
-</div>
-
-<div><hr></div>
-
 <!-- Square card -->
 <style>
 .demo-card-square.mdl-card {
@@ -93,6 +64,48 @@ WorkShop
     url('https://bd23.https.cdn.softlayer.net/80BD23/142.4.51.106/blog/wp-content/uploads/2006/06/rdp-win8-icon-60x60.png') bottom right 15% no-repeat #46B6AC;
 }
 </style>
+<!-- adding style here so there is fewer exteranl resources to call -->
+ <style>
+ input#one {
+    width: 50%;
+    position: absolute;
+    top: -500px;
+}
+ input#two {
+    width: 50%;
+    position: absolute;
+    top: -500px;
+}
+ </style>
+<h1>
+<img src="http://stereo.nypl.org/assets/about-gif2-267c8f399f5d723477da905400eb634a.gif">
+WorkShop
+<img src="http://stereo.nypl.org/assets/about-gif2-267c8f399f5d723477da905400eb634a.gif">
+</h1>
+
+  <!-- Wide card with share menu button -->
+<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+    <h3 class="mdl-card__title-text">Antonio</h3>
+  </div>
+  <div class="mdl-card__supporting-text">
+    Hi, I thanks for attending my workshop. We are going to code up some details pages,
+  make some API calls, and more. All this in this nifty little console.
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Get Started
+    </a>
+  </div>
+  <div class="mdl-card__menu">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" data-clipboard-demo="" data-clipboard-target="#one">
+      <i class="material-icons">share</i>
+    </button>
+  </div>
+</div>
+
+<div><hr></div>
+
 
 <div class="mdl-grid">
 
@@ -232,19 +245,6 @@ function go(){
     rewrite.innerHTML='<button onCLick="go()">Change dynamic content</button><br><h1>Teamwork MAKES the dream WORK</h1><img src="https://media.giphy.com/media/BRbuCoKpu3rmo/giphy-downsized-large.gif">';
 }
 </script>
-<!-- adding style here so there is fewer exteranl resources to call -->
- <style>
- input#one {
-    width: 50%;
-    position: absolute;
-    top: -500px;
-}
- input#two {
-    width: 50%;
-    position: absolute;
-    top: -500px;
-}
- </style>
  <?php
 /*
 * ======================================================================
