@@ -63,6 +63,11 @@ hr{
   background:
     url('https://bd23.https.cdn.softlayer.net/80BD23/142.4.51.106/blog/wp-content/uploads/2006/06/rdp-win8-icon-60x60.png') bottom right 15% no-repeat #46B6AC;
 }
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+    color: rgb(255,255,255);
+    background-color: rgb(70, 182, 172);
+}
+
 </style>
 <!-- adding style here so there is fewer exteranl resources to call -->
  <style>
@@ -76,37 +81,33 @@ hr{
     position: absolute;
     top: -500px;
 }
+.input-group{
+    bottom: 0px;
+}
  </style>
 <h1>
 <img src="http://stereo.nypl.org/assets/about-gif2-267c8f399f5d723477da905400eb634a.gif">
 WorkShop
 <img src="http://stereo.nypl.org/assets/about-gif2-267c8f399f5d723477da905400eb634a.gif">
 </h1>
-
+  <hr>
   <!-- Wide card with share menu button -->
 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
   <div class="mdl-card__title">
-    <h3 class="mdl-card__title-text">Antonio</h3>
+    <h3 class="mdl-card__title-text">Easter Egg</h3>
   </div>
   <div class="mdl-card__supporting-text">
     Hi, I thanks for attending my workshop. We are going to code up some details pages,
   make some API calls, and more. All this in this nifty little console.
   </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Get Started
-    </a>
+  <div id="tweet" class="mdl-card__actions mdl-card--border">
+    <a href="https://twitter.com/intent/tweet?button_hashtag=idxdev" class="twitter-hashtag-button" data-show-count="false">Tweet #idxdev</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
   </div>
   <div class="mdl-card__menu">
-    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" data-clipboard-demo="" data-clipboard-target="#one">
-      <i class="material-icons">share</i>
-    </button>
   </div>
 </div>
-
-<div><hr></div>
-
-
+<hr>
 <div class="mdl-grid">
 
   <div class="mdl-cell mdl-cell--4-col">
@@ -121,9 +122,10 @@ WorkShop
   editor menu and click Remote Import... then Run.
   </div>
   <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Get Started
-    </a>
+    <!-- Accent-colored raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent btn" type="button" data-clipboard-demo="" data-clipboard-target="#one">
+  code remote import link
+</button>
   </div>
 </div>
 </div>
@@ -139,14 +141,13 @@ WorkShop
     with custom tiles and pins. You can sue JS on any IDX Broker page.
   </div>
   <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Get Started
-    </a>
+    <!-- Accent-colored raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent btn" type="button" data-clipboard-demo="" data-clipboard-target="#two">
+  code remote import link
+</button>
   </div>
 </div>
-
 </div>
-
 
 <div class="mdl-grid">
 
@@ -162,9 +163,10 @@ WorkShop
     we have some new tings to show you as well.
   </div>
   <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Get Started
-    </a>
+    <!-- Accent-colored raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent btn" type="button" data-clipboard-demo="" data-clipboard-target="#one">
+  code remote import link
+</button>
   </div>
 </div>
 </div>
@@ -182,29 +184,43 @@ WorkShop
 
   </div>
   <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Get Started
-    </a>
+    <!-- Accent-colored raised button with ripple -->
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent btn" type="button" data-clipboard-demo="" data-clipboard-target="#one">
+  code remote import link
+</button>
   </div>
 </div>
 </div>
+<hr>
+<footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo">Source for lessons available on GitHub</div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="https://github.com/antonioortegajr/Funafuti-Brass-Quail-">GitHub Repo</a></li>
+      <li><a href="#">More</a></li>
+      <li><a href="#">More</a></li>
+      <li><a href="#">More</a></li>
+      <li><a href="#">Privacy & Terms</a></li>
+    </ul>
+  </div>
+</footer>
+<hr>
 
 
 
-
-
+<!-- semi hidden buttons -->
 <div class="input-group">
 <input id="one" type="text" value="https://gist.github.com/antonioortegajr/852fd9d4cb43d18e69ae">
 <span class="input-group-button">
 <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#one">
-Click to copy API call code Gist</button>
+</button>
 </span>
 </div>
 <div class="input-group">
 <input id="two" type="text" value="https://gist.github.com/antonioortegajr/af0d4390f5417c60c5ab9cd414d466de">
 <span class="input-group-button">
 <button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#two">
-Click to copy details page code Gist</button>
+</button>
 </span>
 </div>
 <p>
@@ -212,7 +228,7 @@ Today we are going to be working with Javascript and later PHP.
 If you don't javascript you will. If you have never written a line of PHP we will do that too.
 </p>
  <p>
-  <div id="thing">
+  <div id="thing" style="display:none;">
  <button onCLick="go()">Create dynamic content</button>
  Boring content...
  </div>
