@@ -4,11 +4,7 @@
 <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css">
 <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
 </head>
-  <h2>
-  IDX Broker WorkShop
-  </h2>
-  <body>
-  <!-- Wide card with share menu button -->
+<body>
 <style>
 body{
     background-color: #FAFAFA;
@@ -28,17 +24,24 @@ body{
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
 }
+h1{
+    color:black;
+}
 h2{
-    color:black !important;
+    padding-top: 40px;
+    padding-left: 15px;
 }
 hr{
     width:90%
 }
 </style>
 
+<h1>WorkShop</h1>
+  <!-- Wide card with share menu button -->
+
 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
   <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Antonio</h2>
+    <h3 class="mdl-card__title-text">Antonio</h3>
   </div>
   <div class="mdl-card__supporting-text">
     Hi, I thanks for attending my workshop. We are going to code up some details pages,
@@ -64,10 +67,27 @@ hr{
   width: 320px;
   height: 320px;
 }
-.demo-card-square > .mdl-card__title {
+
+.demo-card-square > .mdl-card__console {
   color: #fff;
   background:
-    url('../assets/demos/dog.png') bottom right 15% no-repeat #46B6AC;
+    url('https://bd23.https.cdn.softlayer.net/80BD23/142.4.51.106/blog/wp-content/uploads/2006/06/rdp-win8-icon-60x60.png') bottom right 15% no-repeat #46B6AC;
+}
+
+.demo-card-square > .mdl-card__js {
+  color: #fff;
+  background:
+    url('https://www.eharry.me/assets/pics/2016-05/7d6da90fa76807f16d99b0d9b3106dcb-60x60.png') bottom right 15% no-repeat #46B6AC;
+}
+.demo-card-square > .mdl-card__api {
+  color: #fff;
+  background:
+    url('http://www.telcohive.com/img/logo_cloud.svg') bottom right 15% no-repeat #46B6AC;
+}
+.demo-card-square > .mdl-card__last {
+  color: #fff;
+  background:
+    url('https://bd23.https.cdn.softlayer.net/80BD23/142.4.51.106/blog/wp-content/uploads/2006/06/rdp-win8-icon-60x60.png') bottom right 15% no-repeat #46B6AC;
 }
 </style>
 
@@ -75,7 +95,7 @@ hr{
 
   <div class="mdl-cell mdl-cell--4-col">
 <div class="demo-card-square mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title mdl-card--expand">
+  <div class="mdl-card__console mdl-card--expand">
     <h2 class="mdl-card__title-text">Code Console</h2>
   </div>
   <div class="mdl-card__supporting-text">
@@ -94,14 +114,13 @@ hr{
 
 
 <div class="demo-card-square mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title mdl-card--expand">
+  <div class="mdl-card__js mdl-card--expand">
     <h2 class="mdl-card__title-text">JavaScript</h2>
   </div>
   <div class="mdl-card__supporting-text">
-    Load up prepared code for javascripting on a details page,
-  making an API call, or get back to this this defaut
-  code. Just click a button below to copy to your clipboard. Then hover over File in the
-  editor menu and click Remote Import... then Run.
+    A little JavaScript can transorm IDX details pages into anything you can imagine.
+    We will move the property details, rearange the porperty images and even create a new map
+    with custom tiles and pins. You can sue JS on any IDX Broker page.
   </div>
   <div class="mdl-card__actions mdl-card--border">
     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -110,21 +129,21 @@ hr{
   </div>
 </div>
 
-</div></div>
+</div>
 
 
 <div class="mdl-grid">
 
   <div class="mdl-cell mdl-cell--4-col">
 <div class="demo-card-square mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title mdl-card--expand">
+  <div class="mdl-card__api mdl-card--expand">
     <h2 class="mdl-card__title-text">API</h2>
   </div>
   <div class="mdl-card__supporting-text">
-    Load up prepared code for javascripting on a details page,
-  making an API call, or get back to this this defaut
-  code. Just click a button below to copy to your clipboard. Then hover over File in the
-  editor menu and click Remote Import... then Run.
+    The IDX Broker API has come a long way and is going in exciting new directions.
+    If you have yet to use the API this lesson will show you how. From first API call
+    creating with the returned JSON. IF you are already consuming the IDX Broekr API
+    we have some new tings to show you as well.
   </div>
   <div class="mdl-card__actions mdl-card--border">
     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -134,16 +153,17 @@ hr{
 </div>
 </div>
 
-
+<div class="mdl-cell mdl-cell--4-col">
 <div class="demo-card-square mdl-card mdl-shadow--2dp">
-  <div class="mdl-card__title mdl-card--expand">
-    <h2 class="mdl-card__title-text">JavaScript</h2>
+  <div class="mdl-card__last mdl-card--expand">
+    <h2 class="mdl-card__title-text">More..</h2>
   </div>
   <div class="mdl-card__supporting-text">
-    Load up prepared code for javascripting on a details page,
-  making an API call, or get back to this this defaut
-  code. Just click a button below to copy to your clipboard. Then hover over File in the
-  editor menu and click Remote Import... then Run.
+    This place is resrved for additional contant that may not be ready for a lesson.
+    The Summit is still many days away so I am hoping to fill this spot with a lesson on
+    something really cool. Not exactly sure what that will be just yet,
+    but I am sure it will be nerdy.
+
   </div>
   <div class="mdl-card__actions mdl-card--border">
     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
@@ -151,8 +171,8 @@ hr{
     </a>
   </div>
 </div>
+</div>
 
-</div></div>
 
 
 
