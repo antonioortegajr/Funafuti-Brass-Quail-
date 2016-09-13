@@ -7,7 +7,7 @@ Those that do not can be cached. Append ?disclaimer=y for these.
 
 All queries to
 
-https://api.idxbroker.com/clients/listing
+ code https://api.idxbroker.com/clients/listing
 
 will require the following in request headers:
 
@@ -21,13 +21,15 @@ Required in endpoint:
 * valid MLS listing ID in endpoint following
 
 
-Example: http://api.idxbroker.com/clients/listing/a000/M1422715
+Example: 
+
+ code http://api.idxbroker.com/clients/listing/a000/M1422715
 
 The above should work with any DEMO account.
 
 All queries to
 
-https://api.idxbroker.com/clients/searchquery?lp=100000&hp=2000000&a000
+ code https://api.idxbroker.com/clients/searchquery?lp=100000&hp=2000000&a000
 
 will require the following in request headers:
 
