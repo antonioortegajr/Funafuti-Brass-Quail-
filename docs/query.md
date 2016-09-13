@@ -7,7 +7,7 @@ Those that do not can be cached. Append ?disclaimer=y for these.
 
 All queries to
 
- code https://api.idxbroker.com/clients/listing
+    https://api.idxbroker.com/clients/listing
 
 will require the following in request headers:
 
@@ -23,13 +23,13 @@ Required in endpoint:
 
 Example: 
 
- code http://api.idxbroker.com/clients/listing/a000/M1422715
+    http://api.idxbroker.com/clients/listing/a000/M1422715
 
 The above should work with any DEMO account.
 
 All queries to
 
- code https://api.idxbroker.com/clients/searchquery?lp=100000&hp=2000000&a000
+    https://api.idxbroker.com/clients/searchquery?lp=100000&hp=2000000&a000
 
 will require the following in request headers:
 
@@ -41,6 +41,7 @@ will require the following in request headers:
 Required in endpoint:
 * valid query string
 
-Example: http://api.idxbroker.com/clients/searchquery?lp=100000&hp=200000
+Example: 
+    http://api.idxbroker.com/clients/searchquery?lp=100000&hp=200000
 
 This does not currently work with DEMO accounts.
