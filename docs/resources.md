@@ -1,0 +1,27 @@
+#Resource Links
+----
+## JavaScript
+[Developers.idxbroker.com JS lesson](https://developers.idxbroker.com/modules/scripting/?course_id=670)
+
+[Learn JS as a WP dev](http://www.codeinwp.com/blog/learning-javascript-for-wordpress/)
+
+[JQery](https://jquery.com/)
+
+[React](https://facebook.github.io/react/)
+
+[Angular](https://angularjs.org/)
+
+[node.js](https://nodejs.org/en/docs/)
+
+
+##API
+
+####Docs
+[Overview](https://developers.idxbroker.com/idx-broker-api/)
+
+[Methods](http://middleware.idxbroker.com/docs/api/methods/index.html)
+
+####API Testing
+[Unofficial Tester](http://unofficial-idx-broker-tools.herokuapp.com/api-quick-tester/)
+
+[Postman](https://www.getpostman.com/)
