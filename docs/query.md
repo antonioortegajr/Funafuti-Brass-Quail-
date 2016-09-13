@@ -47,4 +47,4 @@ Example:
 
     http://api.idxbroker.com/clients/searchquery?lp=100000&hp=200000
 
-This does not currently work with DEMO accounts.
+This above listing endpoint does not currently work with DEMO accounts.
