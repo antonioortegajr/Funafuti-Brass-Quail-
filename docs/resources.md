@@ -16,12 +16,12 @@
 
 ##API
 
-####Docs
+####Docs:
 [API Overview](https://developers.idxbroker.com/idx-broker-api/)
 
 [API Methods](http://middleware.idxbroker.com/docs/api/methods/index.html)
 
-####API Testing
+####API Testing:
 [Unofficial API Tester](http://unofficial-idx-broker-tools.herokuapp.com/api-quick-tester/)
 
 [Postman](https://www.getpostman.com/)
