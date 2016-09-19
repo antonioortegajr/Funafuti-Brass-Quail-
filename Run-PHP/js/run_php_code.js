@@ -1,6 +1,6 @@
 /**
  * Run PHP Code
- * 
+ *
  * This script gives you the ability to quickly test snippets of PHP code locally.
  *
  * @copyright  Copyright 2011-2014, Website Duck LLC (http://www.websiteduck.com)
@@ -131,12 +131,12 @@ var View_Model = function() {
 			var url_array = url.split('/');
 			return url_array[url_array.length-1];
 		}
-	
-		var code_url = prompt('Always make sure imported code is safe before running!!!\n\nSupported services: gist.GitHub.com, PasteBin.com, Pastie.org\n\nEnter URL:');
+
+		var code_url = prompt('Import prepared code!!! Becaue tpyping isn't fun\n\nUse: gist.GitHub.com\n\nEnter URL:');
 		if (code_url === null || code_url === '') return;
 		code_id = get_id_from_url(code_url);
 		self.editor.setValue('Loading code...');
-		
+
 		if (code_url.toLowerCase().indexOf('github.com') !== -1) {
 			$.get('proxy.php', {url: 'https://api.github.com/gists/' + code_id}, function(data) {
 				if (data.charAt(0) === '{') {
@@ -338,7 +338,7 @@ $(function() {
 		var self = this;
 		hide_menu_timeout[$(this).uniqueId().attr('id')] = setTimeout(function() { $('> div', self).stop(true,true,true).slideUp(100); }, 300);
 	});
-	
+
 	$('.subdrop').hover(function() {
 		clearTimeout(hide_menu_timeout[$(this).uniqueId().attr('id')]);
 		$('.subdrop').css('z-index', '9990');
@@ -371,7 +371,7 @@ $(function() {
 	});
 	$('#resize_bar').mousedown(function(e) {
 		if (vm.settings.run_external() === false) {
-			resizing = true; 
+			resizing = true;
 			$('#result_frame').css('pointer-events', 'none');
 			e.preventDefault();
 		}
@@ -388,7 +388,7 @@ $(function() {
 });
 
 //http://stackoverflow.com/questions/5560248/programmatically-lighten-or-darken-a-hex-color
-function shadeColor(color, percent) {   
+function shadeColor(color, percent) {
 	color = color.replace(/#/,'');
 	var num = parseInt(color,16),
 	amt = Math.round(2.55 * percent),
