@@ -7,6 +7,14 @@ http://twig.sensiolabs.org
 
 Basic usage
 
-Create templates withhtml and variables. Variables are declared using double curly braces.
+Create templates with html and variables. Variables are declared using double curly braces.
 Example:
-{{ variable }}
+'<html>
+<head></head>
+<body>
+<h1>{{ variable }}</h1>
+<p>The above curly braces will be filled in with whatever is defined as variable</p>
+</body>
+</html>'
+
+templates can then be used with twig to offer pages based on dynamic data.
