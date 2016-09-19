@@ -132,7 +132,7 @@ var View_Model = function() {
 			return url_array[url_array.length-1];
 		}
 
-		var code_url = prompt('Import prepared code!!! Becaue tpyping isn't fun\n\nUse: gist.GitHub.com\n\nEnter URL:');
+		var code_url = prompt('Import prepared code!!! Becaue tpyping isn\'t fun\n\nUse: gist.GitHub.com\n\nEnter URL:');
 		if (code_url === null || code_url === '') return;
 		code_id = get_id_from_url(code_url);
 		self.editor.setValue('Loading code...');

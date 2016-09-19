@@ -11,6 +11,7 @@
 
 //This application is meant to be run locally and should not be made publicly accessible.
 //if (!in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1'))) die();
+require __DIR__ . '/vendor/autoload.php';
 
 define('NL', PHP_EOL);
 function u(&$v, $default = null) { return isset($v) ? $v : $default; }
@@ -187,7 +188,8 @@ else {
 			<button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#default">
 			Click to copy default Gist</button>
 			</span>
-
+			<div id="twitter" style="float:right;"><a href="https://twitter.com/intent/tweet?button_hashtag=idxdev" class="twitter-hashtag-button" data-show-count="false">Tweet #idxdev</a><script async src="js/ace/widgets.js" charset="utf-8"></script>
+			</div>
 		<!--	<div style="position: relative; display: inline-block; margin-left: 10px;">
 				<span class="php_logo">php</span><input type="text" id="php_search">
 				<div id="php_search_drop"></div>
