@@ -188,6 +188,11 @@ else {
 			<button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#default">
 			Click to copy default Gist</button>
 			</span>
+			<input id="pres" type="text" value="https://gist.github.com/antonioortegajr/761354a9e617d71f596aaa798eab69ff">
+			<span class="input-group-button">
+			<button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#pres">
+			Click to copy Presentation Gist</button>
+			</span>
 			<div id="twitter" style="float:right;"><a href="https://twitter.com/intent/tweet?button_hashtag=idxdev" class="twitter-hashtag-button" data-show-count="false">Tweet #idxdev</a><script async src="js/ace/widgets.js" charset="utf-8"></script>
 			</div>
 		<!--	<div style="position: relative; display: inline-block; margin-left: 10px;">
@@ -234,6 +239,11 @@ else {
 		     position: absolute;
 		     top: -500px;
 		 }
+		 input#pres {
+			 width: 100px;
+			 position: absolute;
+			 top: -500px;
+	 }
 		 </style>
 
 	</body>
