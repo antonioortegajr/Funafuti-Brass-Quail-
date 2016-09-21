@@ -42,7 +42,7 @@ $loader = new Twig_Loader_Array(array(
 
 
                 <!-- End of your template-->'
-));
+    ));
 
 $twig = new Twig_Environment($loader);
 
@@ -50,10 +50,11 @@ $twig = new Twig_Environment($loader);
 $load_template = 'mine';
 
 //load a template with variables
-echo $twig->render($load_template, array('address' => $address,
-                                        'price' => $price,
-                                        'remarks' => $remarks,
-                                        'attribution'=>$attribution
-                                            ));
+echo $twig->render($load_template,
+                    array('address' => $address,
+                            'price' => $price,
+                            'remarks' => $remarks,
+                            'attribution'=>$attribution
+                            ));
 
 ?>
