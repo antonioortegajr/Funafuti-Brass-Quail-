@@ -4,11 +4,11 @@
 //auto load from composer
 require_once 'vendor/autoload.php';
 
-/*   _                _      __ _  
-*  | |_   __ __ __  (_)    / _` | 
-*  |  _|  \ V  V /  | |    \__, | 
-*  _\__|   \_/\_/  _|_|_   |___/  
-*_|"""""|_|"""""|_|"""""|_|"""""| 
+/*   _                _      __ _
+*  | |_   __ __ __  (_)    / _` |
+*  |  _|  \ V  V /  | |    \__, |
+*  _\__|   \_/\_/  _|_|_   |___/
+*_|"""""|_|"""""|_|"""""|_|"""""|
 *"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'
 *
 * In twig we define variables and use them with html
@@ -28,17 +28,32 @@ $attribution = 'template example from Antonio';
 //build templates we can load using html and double curlys
 // avaiable to use {{ address }}, {{ price }}, and {{ remarks }}
 $loader = new Twig_Loader_Array(array(
-    't_one' => ' <h1>{{ address }}</h1><br><h2>{{ remarks }}</h2><p>{{ price }}</p><p>{{ attribution }}</p>',
-    't_two' => '<h1>You Buy Home Cheap Now</h1><h2>{{ price }}</h2><p>{{ remarks }}</p><p>{{ price }}</p>',
-    'your_temp' => ''
+    'first' => '<h1>{{ address }}</h1>
+                <br>
+                <h2>{{ remarks }}</h2>
+                <p>{{ price }}</p>
+                <p>{{ attribution }}</p>',
+    'second' => '<h1>You Buy Home Cheap Now</h1>
+                <h2>{{ price }}</h2>
+                <p>{{ remarks }}</p>
+                <p>{{ price }}</p>',
+    'mine' => '<!--Start of your own template -->
+
+
+
+                <!-- End of your template-->'
 ));
 
 $twig = new Twig_Environment($loader);
 
 //decalre what template to load
-$load_template = 't_two';
+$load_template = 'mine';
 
 //load a template with variables
-echo $twig->render($load_template, array('address' => $address, 'price' => $price, 'remarks' => $remarks, 'attribution'=>$attribution));
+echo $twig->render($load_template, array('address' => $address,
+                                        'price' => $price,
+                                        'remarks' => $remarks,
+                                        'attribution'=>$attribution
+                                            ));
 
 ?>
