@@ -19,6 +19,7 @@ require_once 'vendor/autoload.php';
 
 //pretend we called the db and declare some variables we can use in our templates
 $address = '123 fake street';
+$image = 'img/house.png';
 $price = '100,000,000';
 $remarks = 'This is my description';
 $attribution = 'template example from Antonio';
@@ -28,33 +29,36 @@ $attribution = 'template example from Antonio';
 //build templates we can load using html and double curlys
 // avaiable to use {{ address }}, {{ price }}, and {{ remarks }}
 $loader = new Twig_Loader_Array(array(
-    'first' => '<h1>{{ address }}</h1>
-                <br>
+        'a' => '<h1>{{ address }}</h1>
+                <img src="{{image}}">
                 <h2>{{ remarks }}</h2>
                 <p>{{ price }}</p>
                 <p>{{ attribution }}</p>',
-    'second' => '<h1>You Buy Home Cheap Now</h1>
+        'b' => '<h1>You Buy Home Cheap Now</h1>
+                <img src="{{image}}">
                 <h2>{{ price }}</h2>
                 <p>{{ remarks }}</p>
                 <p>{{ price }}</p>',
-    'mine' => '<!--Start of your own template -->
+        'c' => '<!--Start of your own template -->
 
 
 
                 <!-- End of your template-->'
-    ));
+        ));
 
 $twig = new Twig_Environment($loader);
 
 //decalre what template to load
-$load_template = 'mine';
+$load_template = 'a';
 
 //load a template with variables
 echo $twig->render($load_template,
-                    array('address' => $address,
-                            'price' => $price,
-                            'remarks' => $remarks,
-                            'attribution'=>$attribution
+                    array(
+                        'address' => $address,
+                        'image'=> $image,
+                        'price' => $price,
+                        'remarks' => $remarks,
+                        'attribution'=>$attribution
                             ));
 
 ?>
