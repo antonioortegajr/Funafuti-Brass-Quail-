@@ -32,8 +32,18 @@ echo '<hr>';
 
 
 //form to update
-if ($_SERVER['REQUEST_METHOD'] === 'POST'){
-$doc = $_POST["num"];
+if ($_SERVER['REQUEST_METHOD'] === 'GET'){
+$doc = $_GET["num"];
+
+$prev = $doc - 1;
+$next = $doc + 1;
+
+echo '<hr>';
+echo '<a href="http://localhost:8000/settings?num='.$prev.'"><img src="http://localhost:3000/assets/'.$prev.'.jpg" width="100px">Prev</a> <== <img src="http://localhost:3000/assets/'.$doc.'.jpg" width="100px"> ==> <a href="http://localhost:8000/settings?num='.$next.'">Next<img src="http://localhost:3000/assets/'.$next.'.jpg" width="100px"></a>';
+echo '<hr>';
+
+
+
 
 //update a document
 
@@ -67,9 +77,12 @@ try {
 
 
 
+
+
+
 //form again
 echo '<br><br>Jump to slide:
-<form action="" method="post">
+<form action="" method="GET">
 <input name="num">
 <br>
 <button type="submit">Jump to slide number</button>
@@ -77,7 +90,7 @@ echo '<br><br>Jump to slide:
 }
 else{
   echo '<br><br>Jump to slide:
-  <form action="" method="post">
+  <form action="" method="GET">
   <input name="num">
   <br>
   <button type="submit">Jump to slide number</button>
@@ -89,7 +102,7 @@ $slideTotal = 9;
 while($slideTotal > 10){
   //form again
   echo '<br><br>Jump to slide:
-  <form action="" method="post">
+  <form action="" method="GET">
   <input name="'.$slideTotal.'">
   <br>
   <button type="submit">Jump to slide number</button>
