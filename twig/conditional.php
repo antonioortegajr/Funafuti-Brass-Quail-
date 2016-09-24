@@ -11,10 +11,6 @@ require_once 'vendor/autoload.php';
 *_|"""""|_|"""""|_|"""""|_|"""""|
 *"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'
 *
-* In twig we define variables and use them with html
-* Variables can be values from the database used wiht html by way of double curly braces
-* We then decalre combinations of variables and html (template) to load
-* The variables below would be values from the db for a listing by ID
 */
 
 //pretend we called the db and declare some variables we can use in our templates
