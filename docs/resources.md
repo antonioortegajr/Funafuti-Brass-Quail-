@@ -1,8 +1,8 @@
 #Resource Links
 ----
 ## JavaScript
-[Developers.idxbroker.com JS lesson](https://developers.idxbroker.com/modules/scripting/?course_id=670)
 
+####Docs:
 [Learn JS as a WP dev](http://www.codeinwp.com/blog/learning-javascript-for-wordpress/)
 
 [JQery](https://jquery.com/)
@@ -13,6 +13,13 @@
 
 [node.js](https://nodejs.org/en/docs/)
 
+[Developers.idxbroker.com JS lesson](https://developers.idxbroker.com/modules/scripting/?course_id=670)
+
+
+## twig
+
+####Docs:
+[twig](http://twig.sensiolabs.org)
 
 ##API
 
