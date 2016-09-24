@@ -41,13 +41,16 @@ $loader = new Twig_Loader_Array(array(
                 <h2>{{ price }}</h2>
                 <p>{{ remarks }}</p>
                 <p>{{ price }}</p>',
-        'c' => '<!--Start of new own template -->
+        'c' => '{# comment about what is happening! Lets set up our social networks #}
                 {% set networks = {
-                twitter: { name: "Twitter", url: "http://twitter.com/antonioortegajr" },
-                facebook: { name: "Facebook", url: "http://facebook.com/antonioortegajr" },
-                instagram: { name: "Instagram", url: "http://instagram.com/antonioortegajr" }
+                twitter: { name: "Twitter", url: "https://twitter.com/antonioortegajr" },
+                facebook: { name: "Facebook", url: "https://facebook.com/antonioortegajr" },
+                instagram: { name: "Instagram", url: "https://instagram.com/antonioortegajr" }
                 }
                 %}
+
+
+                {# conditionally itterate with this macro #}
                 {% macro socialList(networks, className) %}
                 <ul {% if className %}class="{{ className }}"{% endif %}>
                 {% for network in networks %}
@@ -57,12 +60,12 @@ $loader = new Twig_Loader_Array(array(
                 {% endmacro %}
 
 
+
+                {# add html and our macro #}
                 <h1>Follow Antonio</h1>
-                <p>Now we are declaring a block of code below.</p>
+                <!--Start of our new own template -->
+                <p>Now we are declaring a block of code below named socailList.</p>
                 {{ _self.socialList(networks, "three-share") }}
-
-
-
 
                 <!-- End of new template-->'
         ));
