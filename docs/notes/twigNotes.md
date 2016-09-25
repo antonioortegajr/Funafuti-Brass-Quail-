@@ -1,6 +1,17 @@
-charAt##Twig Notes
+##Twig Notes
 
-Using twigs templating is pretty straight forward
+###Slides
+
+Slide
+Create your own details page templates.
+
+Create with twig
+
+
+####code
+
+Using twigs templating is pretty straight forward, but let's start with the basics.
+
 In the example code you see we have some normal IDX values like address, price, etc...
 
 In the IDX system these values would be filled in from our database using the listing ID for the db look up.
@@ -39,13 +50,13 @@ This is a_photo on line 27
 
 Now you might think the image is gone simply because we are not passing the path to the image.
 
-However you can inspect with your browser tools and see that the img tag was never used.
+However you can inspect with your browser tools and see that the img tag was never added to the html.
 
-This means there isn't a bunch of junk empty html if some data is not provided.
+This means there isn't a bunch of junk empty html if some data is not avaiable.
 
 OK so we can exclude empty data, but it's more fun to handle these kind of exceptions.
 
-twig support if and else statements so lets add {% else %} and some text on the next line after
+twig supports if and else statements so lets add {% else %} and some text on the next line after
 the <p><img src="{{photo}}"></p>
 
 So now we should have {% else %} and under that Sorry, no photo available.
@@ -55,12 +66,12 @@ visitor that we don't have a photo for this agent and we are sorry about that...
 
 So with twig we have a tool that allows to do much more than positioning. We have conditions.
 
-We even have things like loops and macros.
-
 Everything we have done so far is constructing the page. We can add elements to appear in differing
 locations in the html source code. That is great, we don't need to CSS the heck out of a template
 or use some combination of CSS and JS like we did earlier. This would mean less code to write and
 maintain.
+
+We even have things like loops and macros.
 
 Now for macros.
 
