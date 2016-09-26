@@ -15,7 +15,36 @@ This is just a few. Beyond the front end we get node.js running the back end now
 
 We won't being going to these libraries or any node.js today. Instead we are focusing on the DOM.
 
-What the DOM actually is is a longer talk, bur for today think of it as the rendered source code you would see in your browser developer tools.
+What the DOM actually is is a longer talk, bur for today let's think of it as the rendered source code you would see in your browser developer tools.
+
+So for the first workshop of the day we are going to add JS to a details page. Then we will ad more and more changing the look of the images and map.
+
+If you have never done JS before. Consider this a crash course in DOM manipulation.
+
+Before we get started let's look at the reason to add custom JS to a details page.
+
+We can serve up content we think our visitors will like.
+
+In this example we are pretty sure everyone likes waffles.
+
+But in reality we know that is not true.
+
+We can sill accommodate those that do not by offering more options. Scroll down and choose if you
+like pancakes or french toast instead. Clicking on either of these words will change the image for
+each individual we don't have to visit more pages or even refresh the page we are on.
+
+In an online time where attention spans are getting shorter and shorter the time even to reload
+ a page can be too long.
+
+So we can use Javascript to serve a more personalized experience based on events in the DOM.
+
+Don't worry about keeping up or typing a lot of code as each section of this work shop can be simply
+imported.
+
+So feel free to try any coding you javascript like. If you get lost or write some javascript
+that doesn't work you can just import the code for the next section and be all caught up.
+
+Let's code.
 
 
 #Notes for JS lesson
