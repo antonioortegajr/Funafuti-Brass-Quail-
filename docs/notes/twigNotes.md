@@ -7,12 +7,12 @@ Create your own details page templates.
 
 Create with twig. Last year we kicked around the idea of creating your own details page templates.
 Not sure where that was going we set out to solve some the issues that allowing code to imported
-bring. Security of course, quality, etc... And of course the ever present MLS compliance.
+bring. Security of course is a big one, quality, etc... And of course the ever present MLS compliance.
 
 Starting today every developer partner can begin developing their own details page templates
 using twig.
 
-This pretty new and we are hoping you here can help us work out what is great about this and whatever
+This very new and we are hoping you here can help us work out what is great about this and whatever
 more needs to be done to bring this offering to all developer partners in way that will be a win
 for everyone using the IDX Broker services.
 
@@ -46,6 +46,12 @@ The potential for this to become something more is there as well. Today we are s
 Next will be results pages. This could expand into a whole marketplace where clients can discover
 your templates and purchase the IDX experience your offer. Differing SEO optimized options,
 or even templates designed for a particular niche.
+
+At this point Nick and I will take any submission for new twig templates and test them out first.
+I think from this process this group can help us create a viable system for submission in the future.
+
+We can't promise a firm turn around time as we have no idea how many of you will be submitting a template. However we are excited to take a look at what you will be creating and seeing it usedin the wild.
+
 
 Any questions?
 

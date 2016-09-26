@@ -1,5 +1,21 @@
 #Notes for JS slides
 
+Working with javascript.
+
+Why should we embrace JS?
+
+The main reason is it's power on the client side. It's a language that is already dominating the
+web developer landscape. For a lot of front end web developers and designers JS is something that we have worked around, but never really tackled.
+
+Even with out handling JS directly the popular frameworks and libraries are everywhere.
+
+This is just a few. Beyond the front end we get node.js running the back end now. So we have stacks
+ running JS from front end to back end. Throw in some NoSQL and now we have a full stack with JS
+ principles end to end.
+
+We won't being going to these libraries or any node.js today. Instead we are focusing on the DOM.
+
+What the DOM actually is is a longer talk, bur for today think of it as the rendered source code you would see in your browser developer tools.
 
 
 #Notes for JS lesson
