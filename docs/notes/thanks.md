@@ -28,8 +28,8 @@ now test and develop with. Throwing challenges at him and seeing what upset him
  proved so valuable in working out kinks before we turned this over to our
  developer partners.
 
- Of course thank to every IDX er here today. Alec in making the promo videos.
- Richard's awesome beer labels. The panel and of course Chad.
+ Of course thank to every IDX er here today. Alec for making the promo videos.
+ Richard's awesome beer labels. All on the panel and of course Chad.
 
  Finally thanks to everyone of you that came to Portland today. This group
   has played a large role in building the community that is this developer
@@ -37,4 +37,6 @@ now test and develop with. Throwing challenges at him and seeing what upset him
   IDX community of partners. Complete with collaboration, peer support, and
   feature creations.  At IDX we don't spend a lot of time comparing ourselves
   to other IDX solutions, but I am going to. No other IDX solution has this.
-  That because of all of you. So thanks for that.
+  That because of all of you. So thanks for that. Again please feel free to
+  be social and share thoughts about your experience today. Hashtag idxdev and
+  the optional hashtag #giveantonioapayrasie. Thank for coming to Portland.

@@ -5,7 +5,12 @@
 Sum time: 5 min
 
 ##JavaScript
-25 - min
+5 - min slides
+5 - min first example
+5 - min second example
+5 - min third example
+5 - min fourth example
+5 - min fifth example
 questions - ?
 Sum time: 30 min
 
@@ -14,28 +19,33 @@ Sum time: 30 min
 Sum time: 50
 
 ##Twig
+5 - min slides
 5 - min First example
 5 - min Play with code sample
 5 - min next code example
 5 - min Play with code sample
 5 - min - last code example
 questions - ?
-Sum time: 75
+survey - ?
+Sum time: 80
 
 ##Break
 15 - min
-Sum time: 125
+Sum time: 130
 
 ##API
+5 - min slides
 10 - min featured calls
 questions - ?
 10 - Allen on AE talk
 Questions -?
 5 - min q and l calls
 questions - ?
-Sum time: 160
+survey - ?
+Sum time: 170
 
 ## thanks
 5 - min ish
 questions -?
-Sum time: 165 not counting question time
+survey - ?
+Sum time: 175 not counting question or survey time
