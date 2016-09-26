@@ -3,7 +3,7 @@
 Lunch was a lot of fun. But now I am here to bore you with code stuffs.
  So if everyone can fire up laptops we can begin.
 
- While everyone is settiing back up and logging in I will introduce myself.
+ While everyone is setting back up and logging in I will introduce myself.
 
  My name is Antonio. I am the developer partner channel manger at IDX Broker.
 
