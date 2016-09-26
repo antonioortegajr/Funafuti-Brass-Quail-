@@ -5,7 +5,51 @@
 Slide
 Create your own details page templates.
 
-Create with twig
+Create with twig. Last year we kicked around the idea of creating your own details page templates.
+Not sure where that was going we set out to solve some the issues that allowing code to imported
+bring. Security of course, quality, etc... And of course the ever present MLS compliance.
+
+Starting today every developer partner can begin developing their own details page templates
+using twig.
+
+This pretty new and we are hoping you here can help us work out what is great about this and whatever
+more needs to be done to bring this offering to all developer partners in way that will be a win
+for everyone using the IDX Broker services.
+
+Let's look at some requirements and things to remember.
+
+This is for IDX Broker Partners ONLY. Clients will not be allowed to create templates.
+
+Because we are not writing these templates, IDX Broker will not be supporting them.
+
+Currently there is no way to restrict a client for getting your template should you offer
+and removing the template if they leave your dev code.
+
+Versioning is not supported at this time. Like I mentioned this is very new and this likely going to
+prove something we need to re think and work out.
+
+At this time it might be best to think of the templates as open source.
+
+IDX Broker will not be involved in any disputes over templates.
+If you are looking to not treat this as open source material that is fine.
+
+However keep all I have said in mind if when when you release a template
+
+Of course remember that this is super new. Things about this offering may change.
+
+We are template creation to help give you more creative control of our system.
+
+To create templates and experiences that will help clients see your unique offering.
+
+The potential for this to become something more is there as well. Today we are starting with details pages
+
+Next will be results pages. This could expand into a whole marketplace where clients can discover
+your templates and purchase the IDX experience your offer. Differing SEO optimized options,
+or even templates designed for a particular niche.
+
+Any questions?
+
+Let's code.
 
 
 ####code
