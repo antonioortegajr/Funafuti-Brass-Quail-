@@ -1,6 +1,19 @@
 ##thanks
 
-So that wraps up the Workshop. Before we get to any questions I wanted
+So that wraps up the Workshop. I hope you all got something out of
+listening to me ramble for this long. Again all of this workshop,
+from the slides, code examples and even the notes I have been reading are
+expand on what I have shown.
+More than that, over the next month these will start
+ to become lessons in developers.idxbroker.com. This will allow any support
+ or developer staff to take the lessons they want with out having to search
+through a whole github repo. Of course stars, watching, forks and pulls encouraged.
+Even issues (Brandon). JK
+ I really want everyone here to leave with more
+than just a day of material and notes. Instead I am looking to provide
+all the resources today for you.
+
+Before we get to any questions I wanted
 to be sure we had a little time to thank everyone that helped make this
 event happen the way it did today. It takes a lot of people to throw up
  an event. It takes a lot of planning and execution for this to work out well.
