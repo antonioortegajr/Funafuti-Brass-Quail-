@@ -1,8 +1,20 @@
 #Notes for JS slides
 
-Working with javascript.
+Working with javascript. I get a lot of question on customizations.
 
-Why should we embrace JS?
+They range from simply changing a label or the order of a pick list to rewriting
+a page conditionally. Often the person is seeking a CSS way to achieve this.
+
+This isn't really what CSS does. Where the ability of CSS ends JavaScript takes over.
+
+ It's been around since 1995. Meaning it's old enough to enjoy one of these API IPAs.
+
+Annnnd now everyone feels old. All modern web browsers support javascript. Try going around
+with it disabled sometime.
+
+Heck google is now even indexing like html to some degree. I have tested this. It's true.
+
+Why should we embrace JS as IDX Broker developers?
 
 The main reason is it's power on the client side. It's a language that is already dominating the
 web developer landscape. For a lot of front end web developers and designers JS is something that we have worked around, but never really tackled.

@@ -19,8 +19,14 @@ developers@idxbroker.com where Nick or I will answer. Finally I also have an
 unofficial slack channel called idxdev. If you are on slack and want in, let me know
 via any of the methods I just mentioned.
 
+Last year was our first run at this. We had no idea what to expect.
+It all turned out really great and we learned a lot about this partner network
+ of developers. After that there was no way we were not going to do this again.
+
+ Thanks to everyone that came last year and showed us how cool this event really was.
+
 So last year part of the feedback we got was more code and features.
-So that is what we are doing today. I can't tell you how happy I was to hear our partners
+That is what we are doing today. I can't tell you how happy I was to hear our partners
 so interested in the technologies we use everyday as IDX developers. I like to nerd out
 on this stuff too.
 
@@ -32,6 +38,11 @@ We are also going to do API calls right here. The API already offers a lot of
 potential to build features for clients. And today we are going to look at the basics of those
  calls and brand new calls.
 
+ In the end you will have applied javascript and run php a few times over.
+
+ So this is going to be fun.
+
+If you already know JS or PHP really well there still should be some new stuff you.
 
 If everyone can open up a browser. I suggest Chrome.
 

@@ -88,6 +88,8 @@ Script tags are also fine to use.
 Let's take a few minutes to play with this in the
 console.
 
+5 - min
+
 Now let's look at conditional statements.
 
 We have now added a conditional statement. An if. This was added to template C and now we are showing an agent named Char.
