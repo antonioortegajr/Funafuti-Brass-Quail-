@@ -3,13 +3,14 @@
 //get featured listings
 
 // access URL and request method
-$url = 'https://api.idxbroker.com/clients/featured';
+$url = 'https://api.idxbroker.com/clients/searchquery';
 $method = 'GET';
 
 // headers (required and optional)
 $headers = array(
 	'Content-Type: application/x-www-form-urlencoded', // required
 	'accesskey: YOURAPIKEYHERE', // required - replace with your own
+  'ancillarykey: YOURPARTNERKEYHERE',
 	'outputtype: json',
 	 'apiversion: 1.4.0'// optional - overrides the preferences in our API control page
 );

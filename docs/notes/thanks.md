@@ -28,8 +28,8 @@ equipment and etc.. that allowed us to communicate efficiently today.
 Thank you for putting up with me Tim.
 
 Next I want to thank Jason. He got the twig templating system working.
-He has wanted to build this for some time and it never seems to get into a
-a development sprint. He helped make that a priority this year and got it
+He has really wanted to build this for some time and it didn't get into a
+a development sprint. He helped make this a priority this year and got it
 working for us. Thank Jason.
 
 I also want to thank Tina. She made all the gift bags and did all the labels
@@ -42,7 +42,8 @@ now test and develop with. Throwing challenges at him and seeing what upset him
  developer partners.
 
  Of course thank to every IDX er here today. Alec for making the promo videos.
- Richard's awesome beer labels. All on the panel and of course Chad.
+ Richard's awesome beer labels.
+  All on the panel and of course Chad.
 
  Finally thanks to everyone of you that came to Portland today. This group
   has played a large role in building the community that is this developer

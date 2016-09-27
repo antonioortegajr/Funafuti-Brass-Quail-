@@ -7,7 +7,7 @@ Create your own details page templates.
 
 Create with twig. Last year we kicked around the idea of creating your own details page templates.
 Not sure where that was going we set out to solve some the issues that allowing code to imported
-bring. Security of course is a big one, quality, etc... And of course the ever present MLS compliance.
+brings. Security of course is a big one, quality, introducing a templating language. etc... And of course the ever present MLS compliance.
 
 Starting today every developer partner can begin developing their own details page templates
 using twig.
@@ -15,6 +15,20 @@ using twig.
 This very new and we are hoping you here can help us work out what is great about this and whatever
 more needs to be done to bring this offering to all developer partners in way that will be a win
 for everyone using the IDX Broker services.
+
+Of course you you can wait until we have this polished and ready for all, but the thought
+behind revealing now is to get you guys involved early on. This is in an alpha stage.
+
+Working together we can lead development to where it needs to be right away. Your feedback is
+ the key. The possibilities are really wide open with twig.
+
+We are going to import more code and run in the console allowing some time to experiment
+with twig. A lot of the code you will see is not IDX Broker code. The examples aren't
+necessarily real estate and much of the code you will see would happen on the IDX
+sever side.
+
+But I think it's important to understand how the twig technology works on a fundamental
+level before applying to IDX Broker.
 
 Let's look at some requirements and things to remember.
 
@@ -50,23 +64,33 @@ or even templates designed for a particular niche.
 At this point Nick and I will take any submission for new twig templates and test them out first.
 I think from this process this group can help us create a viable system for submission in the future.
 
-We can't promise a firm turn around time as we have no idea how many of you will be submitting a template. However we are excited to take a look at what you will be creating and seeing it usedin the wild.
+We can't promise a firm turn around time as we have no idea how many of you will be submitting a template. However we are excited to take a look at what you will be creating and seeing it used in the wild.
 
+Of course this offering is so new and in the early stages so much of this may change.
+We are really looking forward to developing this with our developer partners. The feedback
+is needed to drive the development of custom templates in the direction that makes the most
+sense for IDX and anyone submitting a twig template.
 
-Any questions?
+I encourage everyone to explore twig more deeply. Todays workshop is more of crash course
+or an intro to twig. There is much more to explore.
+
+Any questions before we begin?
 
 Let's code.
 
 
 ####code
 
-Using twigs templating is pretty straight forward, but let's start with the basics.
+Using twigs templating is pretty straight forward, but let's start with the basic variables.
 
 In the example code you see we have some normal IDX values like address, price, etc...
 
 In the IDX system these values would be filled in from our database using the listing ID for the db look up.
 
 The php portions of the example code shown would be what IDX Broker runs on our servers.
+
+You won't have to worry about most of this, but what knowing happens on the sever will
+help you to know what to expect to use in your templates.
 
 Notice that one of the variables declared where this template came from. Attribution will be required and no temple will be used with out the IDX Broker attribution link that currently is on all IDX Broker details page templates.
 

@@ -106,5 +106,11 @@ You may not want to tweet about some our new feature examples just yet. Or you m
 
  Up to you.
 
+ We are importing this code first because it contains copy buttons to each lesson.
+ Think of this as the main menu. If you start to explore coding in the console and create
+ something that will no longer run, you can always get back to the lesson by re importing this code and copying the lesson you need to re import.
+
+ Any questions on the console?
+
  Now that we know how this console works we can get started before we do are there any
  questions so far?
