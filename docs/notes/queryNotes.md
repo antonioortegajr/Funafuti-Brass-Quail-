@@ -1,5 +1,8 @@
 ## Query
 
+We have all made API calls now. SO now that we are all used to APIs
+let's looks at the new stuff.
+
 The most common question we get in regards to the API is the question of Raw data
 
 The answer has always been that is something we don't do via API.
@@ -76,10 +79,6 @@ can help. IF you are looking to develop something on a data set, let us know and
     Ok for this lesson we are going to build a search results page. In this results page we will offer a link to the details for each result.
 
     Let's look at what we need.
-
-    let' code
-
-
 
 
     Ok let's code.

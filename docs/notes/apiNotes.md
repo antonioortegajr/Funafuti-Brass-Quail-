@@ -128,14 +128,19 @@ Zero is the first ordinal in an array. From that first ordinal give me the value
 
 Then we close the div.
 
+Similar echos for other data.
+
 Questions time almost?
 
 Why is this NOT confusing you might ask? There are a few reasons. One this is a standard.
-Most APIs return JSON. Many JSON only. It's normal enough to have jsut about every language
- support JSON. Second alternatives. What are they? XML? CSV? What can we set up that
- everyone can use easily? The API will return XML.
- However instead each XML doc can be very different depending on what API you access.
- Learning to work with JSON means you can work with most REST APIs with fewer custom
- scripts to handle other formats.
+Most APIs return JSON. Many JSON only. It's normal enough to have jsut like every language support
+JSON. Second alternatives. What are they? XML? CSV? What can we set up that
+everyone can use easily? The API will return XML.
+However instead each XML doc can be very different depending on what API you access.
+Learning to work with JSON means you can work with most REST APIs with fewer custom
+scripts to handle other formats.
+
+At this point I could change the endpoint and API key and access many APIs with
+no rewriting my code.
 
 Ok Questions?

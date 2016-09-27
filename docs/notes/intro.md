@@ -110,7 +110,10 @@ You may not want to tweet about some our new feature examples just yet. Or you m
  Think of this as the main menu. If you start to explore coding in the console and create
  something that will no longer run, you can always get back to the lesson by re importing this code and copying the lesson you need to re import.
 
- Any questions on the console?
+ We will import code many times. This is to avoid typing new code. Also to give time for
+ experimenting with code in this console.
+
+ Any questions on the console? Please ask questions any time. This is not a lecture.
 
  Now that we know how this console works we can get started before we do are there any
  questions so far?
