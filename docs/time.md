@@ -12,7 +12,7 @@ Sum time: 5 min
 5 - min fourth example
 5 - min fifth example
 questions - ?
-Sum time: 30 min
+Sum time: 35 min
 
 ##Break
 15 - min
@@ -31,21 +31,21 @@ Sum time: 80
 
 ##Break
 15 - min
-Sum time: 130
+Sum time: 95
 
 ##API
 5 - min slides
-10 - min featured calls
+10 - min featured call
 questions - ?
 10 - Allen on AE talk
 Questions -?
-5 - min q and l calls
+10 - min q and l calls
 questions - ?
 survey - ?
-Sum time: 170
+Sum time: 130
 
 ## thanks
 5 - min ish
 questions -?
 survey - ?
-Sum time: 175 not counting question or survey time
+Sum time: 135 not counting question or survey time
