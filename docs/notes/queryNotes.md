@@ -70,7 +70,7 @@ can help. IF you are looking to develop something on a data set, let us know and
 
     These methods and their returns may change as we discover usage and any and all compliance issues.
 
-    Before we get back into the console for the code lesson. I want to ask Allen McN up to the stage to speak about how all this came to be and the role the Agent Evolution has played.
+    Before we get back into the console for the code workshop. I want to ask Allen McN up to the stage to speak about how all this came to be and the role the Agent Evolution has played.
 
     Allen.
 
@@ -80,5 +80,28 @@ can help. IF you are looking to develop something on a data set, let us know and
 
     Let's look at what we need.
 
+    PHP and cURL again.
+    Client and a partner key as this method is for partners only.
+    The new endpoint
+    we can create a form to search.
 
     Ok let's code.
+
+    Now we have some PHP that is a lot like the featured example. The endpoint is new.
+This is only available in version 1.4.0.
+
+Let's start there.
+
+For this example we are going to keep it simple. High price and low price.
+These are passed via the API endpoint. Much like search pages do.
+A question mark begins the delineation and ampersands seperate the key and value
+pairs.
+
+This is meant to be like the already familiar saved link creation.
+High price and low price are core fields, however advanced fields can be passed.
+There is already a method for getting all advanced fields in an MLS. This has been available
+in previous versions.
+
+Calling the API much like we did before with featured listings we get JSON.
+
+We will work with this in the same way.

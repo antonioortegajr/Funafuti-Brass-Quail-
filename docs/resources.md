@@ -32,3 +32,6 @@
 [Unofficial API Tester](http://unofficial-idx-broker-tools.herokuapp.com/api-quick-tester/)
 
 [Postman](https://www.getpostman.com/)
+
+## Slack
+https://idxdev.herokuapp.com/

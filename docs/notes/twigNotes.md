@@ -24,7 +24,7 @@ Working together we can lead development to where it needs to be right away. You
 
 Why twig? This is the template language we currently use for details page templates.
 This means instead of adopting and writing more code to use something else like
-liquid or stache, we can just use what our system is ready to accept.
+liquid or handlebars, we can just use what our system is ready to accept.
 
 We are going to import more code and run in the console allowing some time to experiment
 with twig. A lot of the code you will see is not IDX Broker code. The examples aren't
@@ -43,7 +43,7 @@ Because we are not writing these templates, IDX Broker will not be supporting th
 Currently there is no way to restrict a client for getting your template should you offer
 and removing the template if they leave your dev code.
 
-Versioning is not supported at this time. Like I mentioned this is very new and this likely going to
+Versioning is not completely supported at this time. Like I mentioned this is very new and this likely going to
 prove something we need to re think and work out.
 
 At this time it might be best to think of the templates as open source.
