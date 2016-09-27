@@ -93,3 +93,49 @@ So when that happens we are going to use josn_decode() to start working with JSO
 After this we are simply dumping our the response variable.
 
 That is nuts and bolts of this simple PHP script.
+
+Let's use this to make a featured listings page.
+
+To do this we are going to use a for each loop to iterate through the JSON.
+
+This will be foreach  response as key and value. This is where the JSON shows how
+ useful it is. For each object int he return. OR each property as the props are
+ returned as JSON objects. Let's do something for each one.
+
+ The JSON is a collection of Objects.
+ Data. Each object is a property with objects nested about the property.
+ The foreach() loop works through the properties. SO at this level the key would
+ be a property, and the values would be objects containing data about a property.
+ Repeated over and over.
+
+ IN plain speak, what we are saying is for each property in the return,
+ execute some code regarding the details for properties one at a time.
+
+ Any questions?
+
+ Inside the foreach() loop we work with the JSON.
+
+ We echo html mixed with JSON keys. With JSON that has been decoded we can
+ use the variable in this case value and the key in brackets.
+
+ The line getting the image url does this and even sets what image to use.
+
+ WE are inside the foreach() loop. So this code will run over and over for all
+ properties until there are no more. IN this case we want the key of image
+from the property object. The nested data inside this is an array. As would
+ be expected for a property with many images. So I specify the first image.
+Zero is the first ordinal in an array. From that first ordinal give me the value from the key named url.
+
+Then we close the div.
+
+Questions time almost?
+
+Why is this NOT confusing you might ask? There are a few reasons. One this is a standard.
+Most APIs return JSON. Many JSON only. It's normal enough to have jsut about every language
+ support JSON. Second alternatives. What are they? XML? CSV? What can we set up that
+ everyone can use easily? The API will return XML.
+ However instead each XML doc can be very different depending on what API you access.
+ Learning to work with JSON means you can work with most REST APIs with fewer custom
+ scripts to handle other formats.
+
+Ok Questions?
