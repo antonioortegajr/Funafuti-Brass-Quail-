@@ -1,155 +1,145 @@
-{# Actionable items we want the user to take go in the hotLinks section. #}
-<div id="IDX-hotLinks">
+{# 
+    So you want create your own details page design... and you thought it was going to be easy :P
 
-    {# Let's get that lead, create the link for saving a property.  #}
-    {{ idx.saveProperty }}
-    
-    {# Using the moreInfoLink URL passed into twig, we can make a link to the more info page. #}
-    <a href="{{ moreInfoLink }}" id="IDX-moreInfo">More Information</a>
-    
-    {# Use the IDX macros to build the link to the mortgage calculator page. #}
-    {{ idx.displayMortgageCalcLink }}
+    There's actually a lot of different scenarios for a details page, here's some requirements and 
+    checklists we use when creating a new details page.
 
-    {# Link to the printable flyer page. #}
-    <a target="_blank" href="?printable" id="IDX-printable">Printable Flyer</a>
+    Requirements:
+    * address
+    * price
+    * listingID
+    * fields: beds, baths (totalBaths, fullBaths, partialBaths), sqft, acres, propStatus
+    * photo (called with macro so there's a consistent containing ID for MLS Rules, tools.photo() )
+    * featured agent
+    * virtual tours & open houses
+    * share this
+    * custom link
+    * description / remarks
+    * actions: save property, more info, print
+
+    Conditionals:
+    * idxStatus == 'active': schedule showing, mortgage calculator
     
-    {# 
-     # If the account is an office and we got the featured agent info, 
-     # make the link to the contact URL specific to that agent. Otherwise,
-     # just link to the more info page.
-     #}
-    {% if featuredAgentInfo %}
-        {% set contactURL = "/idx/contact?agentID=" ~ featuredAgentInfo.userID %}
-    {% else %}
-        {% set contactURL = moreInfoLink %}
-    {% endif %}
-    
-    <a href="{{ contactURL }}" id="IDX-contactAgent">Contact Agent</a>
-    
-    {# 
-     # Clients can enter custom URLs and Text for properties on the listing edit page,
-     # let's display their custom URL here.
-     #}
-    {% if customLink.url and customLink.text %}
-        <a class="IDX-CustomLink" href="{{ customLink.url }}" target="_blank">{{ customLink.text }}</a>
-    {% endif %}
+    Checklist:
+    * Works for specified widths
+    * Printable Looks Good (?printable)
+    * "MLS" is not displayed anywhere.
+    * Acceptable for all prop types and various kinds of data
+#}
+
+{# -------------------------------------------------------------------------------------------------------------- #
+    Step #1 - Import the IDX Tools for Faster Development, it's versioned so it will never break your design.
+ # -------------------------------------------------------------------------------------------------------------- #}
+{% import "detailsTools-1.000.twig" as idx %}
+
+{# -------------------------------------------------------------------------------------------------------------- #
+    Step #2 - Let's get some required fields on the page.
+ # -------------------------------------------------------------------------------------------------------------- #}
+
+{# ADDRESS 1: Quick way to get the address on the page #}
+{{ tools.address }}
+
+{# ADDRESS 2: You could get the address on the page using the data directly and put it in a H1 tag. #}
+<h1>
+    {{ address }} or {{ streetNumber }} {{ streetDirection }} {{ streetName }} {{ unitNumber }}
+    {{ cityName }} {{ stateAbrv }} or {{ state }}, {{ zipcode }}
+    {# Conditionally add the zip4 if it has a value #}
+    {% if zip4 > 0 %}-{{ zip4 }} {% endif %}
+</h1>
+
+{# PRICE 1: Let's get the price on the page, we'll add a special class if it's sold for styling. #}
+<div id="IDX-price"{% if idxStatus == 'sold' %} class="IDX-archive IDX-{{ propStatus }}"{% endif %}>
+    <span id="IDX-price-label">{{ priceLabel }} </span>
+    {# Some MLS's have a rule for adding something to the price, we'll do that as well. #}
+    <span id="IDX-price-text">{{ priceDisplay }} {{ mlsRules.priceSuffix -}}</span>
 </div>
 
-{#
- # New section for the main information, photo, address price, etc.
- #}
-<div id="IDX-detailsHead">
-    <div id="IDX-photoListing">
-        {#
-         # Using the IDX macro for photos will ensure you're in compliance with MLSs rules
-         # as some MLS's require a courtesy to be displayed with the primary photo. If you
-         # don't use the IDX photo macro, you MUST at least wrap the primary photo in a 
-         # <div> with the ID of "IDX-primaryPhoto".
-         #
-         # Possible photo options could be:
-         # idx.photo('single')
-         # idx.photo('gallery')
-         # idx.photo('three')
-         #
-         # This by-passes the photo macro to call the photo single macro specifically because this
-         # wants to display the idx.photoGalleryLink on its own (hence the false option passed in).
-         #}
-        {{ idx.photoSingle(false) }}
-        {{ idx.photoGalleryLink }}
-    </div>
-    {# Use the IDX macros to display the address #}
-    {{ idx.address }}
+{# PRICE 2: Getting the same price output above can be done with our price macro... #}
+{{ idx.simplePrice }}
 
-    {# Use the IDX macros to display the price, this figures out the label for sold, rentals, etc. #}
-    {{ idx.price({labelAfter:true}) }}
+{# The field macro is a quick way to get a field taking into the client settings (as well) #}
+{{ idx.fieldNew('listingID') }}
+{{ idx.fieldNew('sqFt') }}
+{{ idx.fieldNew('acres') }}
 
-    {# BankRate is a good idea to have on pages. #}
-    {{ idx.bankRateTool(displayBankRateEstPayment, mortgagePayment) }}
-    
-    {# Using a the IDX fieldNew macro, we can display any number of fields. #}
-    <div id="IDX-detailsHeadFields">
-        {{ idx.fieldNew('bedrooms', {labelAfter:true}) }}
-        {{ idx.fieldNew('fullBaths', {labelAfter:true}) }}
-        {{ idx.fieldNew('totalBaths', {labelAfter:true}) }}
-        {{ idx.fieldNew('partialBaths', {labelAfter:true}) }}
-        {{ idx.fieldNew('sqFt', {labelAfter:true}) }}
-        {{ idx.fieldNew('acres', {labelAfter:true}) }}
-        {{ idx.fieldNew('listingID', {labelAfter:true}) }}
-    </div>
+{# Labels could be behind the field by passing in some additional options #}
+{{ tools.fieldNew('bedrooms', {labelAfter:true}) }}
+{{ tools.fieldNew('fullBaths', {labelAfter:true}) }}
+{{ tools.fieldNew('totalBaths', {labelAfter:true}) }}
+
+{# If you only want to show acres if the value is greater than zero... #}
+{{ tools.numericField('partialBaths') }}
+
+
+{# -------------------------------------------------------------------------------------------------------------- #
+    Step 3: Photos, let's make this page look good! Oh wait, it depends on the photos. 
+ # -------------------------------------------------------------------------------------------------------------- #}
+
+{# These all include the photo gallery link #}
+{{ idx.photo('single') }}
+{{ idx.photo('gallery') }}
+{{ idx.photo('three') }}
+
+
+{# Create your own primary photo markup. MUST have the ID of #IDX-detailsPropertyPhoto for MLS Rules #}
+<div id="IDX-detailsPropertyPhoto">
+    <img src="{{ imageData.1.url }}" />
 </div>
-{{ idx.lineBreak("detailsHead") }}
 
-{#
- # There is a idx.openHouse macro to do this, but we want a custom one. Let's 
- # use the open house media data to create our own open house HTML.
- #}
-{% if mediaData.ohCount > 0 %}
-<div id="IDX-openHouses">
-    <h3 id="IDX-openHouseHeader">Upcoming Open House{% if mediaData.ohCount > 1 %}s{% endif %}</h3>
-    {% for oh in mediaData.oh %}
-        <div class="IDX-openHouseWrapper">
-            <h4 class="IDX-ohFreeFormDate">{{ oh.freeFormDate }}</h4>
-            <div class="IDX-openHouse">
-                <div class="IDX-openHouseTime"><span class="IDX-ohWhen">Time: </span><span class="IDX-ohFreeFormTime">{{ oh.freeFormTime }}</span></div>
-                {% if oh.text %}<div class="IDX-ohText">{{ oh.text }}</div>{% endif %}
-                {% if oh.descriptor %}<div class="IDX-ohDescriptor">{{ oh.descriptor }}</div>{% endif %}
-                {% if oh.ohLink %}<a href="{{ oh.ohLink }}" class="IDX-ohLink">More Info</a>{% endif %}
-            </div>
-        </div>
+{# Use Twig's for tag for getting the first three images...  #}
+<div id="IDX-detailsPropertyPhoto">
+    {% for i in 1..3 %}
+        {% set img = attribute(imageData, i) %}
+        <img src="{{ img.url }}" />
     {% endfor %}
-    <a id="IDX-ohMoreInfo" href="{{ moreInfoLink }}">Request More Info</a>
 </div>
+
+{# Just a link to the photo gallery page #}
+{{ idx.photoGalleryLink }} 
+
+or create your own: 
+{% if imageData.totalCount > 0 %}
+    <a href="{{ photoGalleryLink }}" class="btn">View Photos</a>
 {% endif %}
 
+{# -------------------------------------------------------------------------------------------------------------- #
+    Step 4: Featured Agents... Office account featured pages should have the selling agent's info display.
+ # -------------------------------------------------------------------------------------------------------------- #}
 
-<div id="IDX-description">
+{# This should be a macro... but for now you could do this.  #}
+ {% if featured == 'y' %}
+     {% include 'featuredAgent-1.000.twig' %}
+ {% endif %}
 
-    {# Add the remarks to the property, the macro will create generic text if no remarks exist. #}
-    {{ idx.remarks }}
-</div>
 
-<div id="IDX-detailsFeatured">
-    
-    {#
-     # Scheduling a showing should only happen for active properties. Using the idxStatus variable
-     # which will be either 'active' or 'sold' we can accomplish this pretty easily.
-     #}
-    {% if idxStatus == 'active' %}
-    <a id="IDX-scheduleShowing" href="{{ scheduleShowingLink }}" class="IDX-button">Schedule Showing</a>
-    {% endif %}
-    
-    {# Show the links to the virtual tours, yes tours, some listing may have more than one. #}
-    {{ idx.virtualTour }}
-    
-    {# 
-     # Let's highlight some specific fields that are popular. These are core fields, 
-     # but there's no reason you couldn't make a template for a specific MLS's advanced fields
-     # like schools and what not.
-     #}
-    <div id="IDX-contentFields">
+{# -------------------------------------------------------------------------------------------------------------- #
+    Step 5: Other important infomation.
+ # -------------------------------------------------------------------------------------------------------------- #}
 
-        {% set contentFields = {
-            "core": [
-                "propStatus",
-                "countyName",
-                "yearBuilt",
-                "propType",
-                "propSubType"
-            ],
-            "other": [
-                "area",
-                "nonExistantField" 
-            ]
-        } 
-        %}
-        
-        {# Loop through the content fields and make sections of the core and other fields. #}
-        {% for divID, fields in contentFields %}
-            <div id="IDX-contentFields-{{ divID }}" class="IDX-contentFields">
-            {% for field in fields %}
-                {{ idx.fieldNew(field) }}
-            {% endfor %}
-            </div>
-        {% endfor %}
-    </div>
-</div>
+{{ idx.virtualTour }}
+{{ idx.openHouse }}
+{{ idx.showingLink }}
+{{ idx.remarks }}
+{{ idx.map }}
+{{ idx.shareThis('div','idx-shareThis', {smallIcons:true}) }}
+{{ idx.mapLocation }}
+
+{# Links to: more info, schedule showing, printable version, virtual tour, open house, and map location #}
+{{ idx.links }} 
+
+{# -------------------------------------------------------------------------------------------------------------- #
+    Step 6: Lead generation tools.
+ # -------------------------------------------------------------------------------------------------------------- #}
+
+{{ idx.saveProperty }}
+{{ idx.bankRateTool }}
+<a href="{{ moreInfoLink }}">More Info</a>
+<a href="{{ scheduleShowingLink }}">Schedule Showing</a>
+<a target="_blank" href="?printable=1">Printable Flyer</a>
+
+{# -------------------------------------------------------------------------------------------------------------- #
+    Step 7: The advanced fields.
+ # -------------------------------------------------------------------------------------------------------------- #}
+ 
+{{ tools.fieldContainers }}
+
