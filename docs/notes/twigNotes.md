@@ -22,6 +22,10 @@ behind revealing now is to get you guys involved early on. This is in an alpha s
 Working together we can lead development to where it needs to be right away. Your feedback is
  the key. The possibilities are really wide open with twig.
 
+Why twig? This is the template language we currently use for details page templates.
+This means instead of adopting and writing more code to use something else like
+liquid or stache, we can just use what our system is ready to accept.
+
 We are going to import more code and run in the console allowing some time to experiment
 with twig. A lot of the code you will see is not IDX Broker code. The examples aren't
 necessarily real estate and much of the code you will see would happen on the IDX

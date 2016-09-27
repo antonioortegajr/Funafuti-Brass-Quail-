@@ -11,6 +11,10 @@ Today we are doing API 101. making a featured listings call and creating a
 simple featured page. All in PHP.  We touched on some PHP with twig already.
 This will be just PHP you would run on your sever. Or today in this console.
 
+What if I don't know PHP? NO big deal. It looks tougher than it is. Also
+we supply sample code. It's easy to install on a local machine. Already
+installed if you have a Mac.
+
 Our API calls will use a php function call cURL. This will get the contents of
 an endpoint. cURL has a lot of options that can go with it. We are just going to
 fetch some JSON. Then use the php function json_decde() to begin working with
