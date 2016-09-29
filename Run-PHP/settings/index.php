@@ -13,7 +13,7 @@
 //installed php55-mongodb via homebrew
 //slide "_id" is "ygP4PpSwbcDnXpwSf"
 
-$manager = new MongoDB\Driver\Manager("mongodb://admin:Changeme123@localhost:3001/meteor");
+$manager = new MongoDB\Driver\Manager("mongodb://admin:Changeme123@localhost:3001");
 
 $query = ['_id' => 'ygP4PpSwbcDnXpwSf'];
 $command = new MongoDB\Driver\Command([
@@ -39,7 +39,7 @@ $prev = $doc - 1;
 $next = $doc + 1;
 
 echo '<hr>';
-echo '<a href="http://localhost:8000/settings?num='.$prev.'"><img src="http://localhost:3000/assets/'.$prev.'.jpg" width="100px">Prev</a> <== <img src="http://localhost:3000/assets/'.$doc.'.jpg" width="100px"> ==> <a href="http://localhost:8000/settings?num='.$next.'">Next<img src="http://localhost:3000/assets/'.$next.'.jpg" width="100px"></a>';
+echo '<a href="http://localhost:2000/settings?num='.$prev.'"><img src="http://localhost:3000/assets/'.$prev.'.jpg" width="100px">Prev</a> <== <img src="http://localhost:3000/assets/'.$doc.'.jpg" width="100px"> ==> <a href="http://localhost:2000/settings?num='.$next.'">Next<img src="http://localhost:3000/assets/'.$next.'.jpg" width="100px"></a>';
 echo '<hr>';
 
 

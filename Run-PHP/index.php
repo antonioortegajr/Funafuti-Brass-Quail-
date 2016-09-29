@@ -182,16 +182,25 @@ else {
 				<button class="button" type="button" data-bind="click: clear"><i class="fa fa-eraser"></i> &nbsp; Clear</button>
 				<button class="button" type="button" title="Run (Ctrl+Enter)" data-bind="click: run">Run &nbsp; <i class="fa fa-play"></i></button>
 			</div>
-
-			<input id="default" type="text" value="https://gist.github.com/antonioortegajr/d4ded415e8f11d916f693dda5af85317">
+			<input id="slides" type="text" value="https://gist.github.com/antonioortegajr/761354a9e617d71f596aaa798eab69ff">
+			<span class="input-group-button">
+			<button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#slides">
+			Copy Slides to clipboard</button>
+			</span>
+			<input id="default" type="text" value="https://gist.github.com/antonioortegajr/af0d4390f5417c60c5ab9cd414d466de">
 			<span class="input-group-button">
 			<button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#default">
-			Click to copy default Gist</button>
+			JavaScript Workshop</button>
 			</span>
-			<input id="pres" type="text" value="https://gist.github.com/antonioortegajr/761354a9e617d71f596aaa798eab69ff">
+			<input id="pres" type="text" value="https://gist.github.com/antonioortegajr/49d37a373012804a1fcb31fb8e97252c">
 			<span class="input-group-button">
 			<button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#pres">
-			Click to copy Presentation Gist</button>
+			twig Workshop</button>
+			</span>
+			<input id="api_w" type="text" value="https://gist.github.com/antonioortegajr/f476622b5a6e02060b6d89a1a34e48bc">
+			<span class="input-group-button">
+			<button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#api_w">
+			API Workshop</button>
 			</span>
 			<div id="twitter" style="float:right;"><a href="https://twitter.com/intent/tweet?button_hashtag=idxdev" class="twitter-hashtag-button" data-show-count="false">Tweet #idxdev</a><script async src="js/ace/widgets.js" charset="utf-8"></script>
 			</div>
@@ -234,6 +243,11 @@ else {
 		}
 		</script>
 		 <style>
+		 input#slides {
+			 width: 100px;
+			 position: absolute;
+			 top: -500px;
+		}
 		  input#default {
 		     width: 100px;
 		     position: absolute;
@@ -244,6 +258,11 @@ else {
 			 position: absolute;
 			 top: -500px;
 	 }
+	 input#api_w {
+		 width: 100px;
+		 position: absolute;
+		 top: -500px;
+ }
 		 </style>
 
 	</body>
