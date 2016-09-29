@@ -9,12 +9,16 @@ This isn't really what CSS does. Where the ability of CSS ends JavaScript takes 
 
  It's been around since 1995. Meaning it's old enough to enjoy one of these API IPAs.
 
-Annnnd now everyone feels old. All modern web browsers support javascript. Try going around
-with it disabled sometime.
+Annnnd now everyone feels old.
+
+All modern web browsers support javascript. Try going around
+with it disabled sometime. Not fun.
 
 Heck google is now even indexing like html to some degree. I have tested this. It's true.
 
 Why should we embrace JS as IDX Broker developers?
+
+We are already applying CSS, why another layer?
 
 The main reason is it's power on the client side. It's a language that is already dominating the
 web developer landscape. For a lot of front end web developers and designers JS is something that we have worked around, but never really tackled.
@@ -29,9 +33,12 @@ We won't being going to these libraries or any node.js today. Instead we are foc
 
 What the DOM actually is is a longer talk, bur for today let's think of it as the rendered source code you would see in your browser developer tools.
 
-So for the first workshop of the day we are going to add JS to a details page. Then we will ad more and more changing the look of the images and map.
+So for the first workshop of the day we are going to add JS to a details page. Then we will add more and more changing the look of the images and map.
 
-If you have never done JS before. Consider this a crash course in DOM manipulation.
+If you have never done JS before. Consider this a sort of crash course in DOM manipulation.
+
+We won't be going that deep into javascript in fact we are just going to abuse DOM rewrites
+for the sake of illistrating how easy and powerful it can be.
 
 Before we get started let's look at the reason to add custom JS to a details page.
 
