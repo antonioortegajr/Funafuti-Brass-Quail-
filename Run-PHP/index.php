@@ -197,7 +197,7 @@ else {
 			<button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#pres">
 			twig Workshop</button>
 			</span>
-			<input id="api_w" type="text" value="https://gist.github.com/antonioortegajr/f476622b5a6e02060b6d89a1a34e48bc">
+			<input id="api_w" type="text" value="https://gist.github.com/antonioortegajr/a2089435928b511fb6cff6e6cdc05f5f">
 			<span class="input-group-button">
 			<button class="btn" type="button" data-clipboard-demo="" data-clipboard-target="#api_w">
 			API Workshop</button>

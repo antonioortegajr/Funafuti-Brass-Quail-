@@ -39,7 +39,7 @@ $prev = $doc - 1;
 $next = $doc + 1;
 
 echo '<hr>';
-echo '<a href="http://localhost:2000/settings?num='.$prev.'"><img src="http://localhost:3000/assets/'.$prev.'.jpg" width="100px">Prev</a> <== <img src="http://localhost:3000/assets/'.$doc.'.jpg" width="100px"> ==> <a href="http://localhost:2000/settings?num='.$next.'">Next<img src="http://localhost:3000/assets/'.$next.'.jpg" width="100px"></a>';
+echo '<a href="http://192.168.1.85:2000/settings?num='.$prev.'"><img src="http://192.168.1.85:3000/assets/'.$prev.'.jpg" width="100px">Prev</a> <== <img src="http://192.168.1.85:3000/assets/'.$doc.'.jpg" width="100px"> ==> <a href="http://192.168.1.85:2000/settings?num='.$next.'">Next<img src="http://192.168.1.85:3000/assets/'.$next.'.jpg" width="100px"></a>';
 echo '<hr>';
 
 

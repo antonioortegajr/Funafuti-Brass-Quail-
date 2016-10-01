@@ -77,12 +77,6 @@ export default class Task extends Component {
     </span>
     )
   }
-  if (num == "8") {
-    Message = (
-    <span>
-    </span>
-    )
-  }
   if (num == "9") {
     Message = (
       <span>
@@ -280,6 +274,23 @@ export default class Task extends Component {
       <img src="/assets/36.jpg"></img>
     </span>
   )
+  }
+
+  if (num == "8") {
+    Message = (
+    <span>
+      <div id="waffle">
+      <img src="/assets/8.jpg"></img>
+      </div>
+      <div onClick={this.cakeClick}>
+        Not everyone likes waffles. Some viewers may prefer pancakes.
+      </div>
+      <div onClick={this.frenchClick}>
+        Or French Toast.
+      </div>
+
+    </span>
+    )
   }
 
 
